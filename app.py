@@ -6,7 +6,7 @@ import os
 # Load model once
 @st.cache_resource
 def load_model():
-    return pipeline("question-answering", model="distilbert-base-uncased-distilled-squad")
+    return pipeline("question-answering",model="deepset/roberta-base-squad2")
 
 qa_pipeline = load_model()
 
