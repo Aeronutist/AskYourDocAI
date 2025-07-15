@@ -14,7 +14,8 @@ qa_pipeline = load_model()
 st.set_page_config(page_title="Ask Your Doc AI", layout="centered")
 
 st.title("📄 Ask Your Document – BERT QA App")
-st.markdown("Upload a `.pdf` or `.txt` file and ask anything about its content!")
+st.markdown("Upload a `.pdf` or `.txt` file and ask anything about its content!
+⚠️make sure pdf file not creted by scan copy it must generate in write means pdf encoded")
 
 # Upload file
 uploaded_file = st.file_uploader("📁 Upload your document", type=["pdf", "txt"])
